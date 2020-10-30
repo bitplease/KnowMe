@@ -21,7 +21,7 @@ app.get('/', function(req, res){
                
 }); 
 
-app.set('port', 4040);
+app.set('port', 3000);
 console.log(__dirname);
 
 app.listen(app.get('port'), function() {
