@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 var express = require('express');
 var app = express();
+var path = require("path");
 
 var bodyParser = require('body-parser');
 
@@ -30,5 +31,5 @@ app.listen(app.get('port'), function() {
 });
 
 app.get('*', function(req, res){
-  res.sendFile(path.join(__dirname, '../Firstpage', '404.html'));
+  res.sendFile(path.join(__dirname, '404.html'));
 });
